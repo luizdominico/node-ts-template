@@ -5,7 +5,7 @@ module.exports = {
   },
   extends: [
     'standard',
-    "prettier/standard"
+    "prettier"
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -17,7 +17,10 @@ module.exports = {
     "prettier"
   ],
   rules: {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-unused-vars": "off",
+    "space-before-function-paren": "off"
   },
   overrides: [
     {

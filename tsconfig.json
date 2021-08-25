@@ -17,6 +17,7 @@
     "alwaysStrict": true,
     "baseUrl": "./",
     "paths": {
+      "@root/*": ["./*"],
       "@src/*": ["./src/*"]
     },
     "rootDirs": [
@@ -27,11 +28,13 @@
       "./node_modules/@types",
       "./src/@types"
     ],
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false
   },
   "include": [
     "./src/**/*.ts",
